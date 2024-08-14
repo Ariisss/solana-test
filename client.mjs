@@ -40,7 +40,7 @@ tx.sign(keyPair);
 const txHash = await connection.sendRawTransaction(tx.serialize());
 
  
-console.log("Transaction sent with hash:", txHash);
+console.log("Transaction sent with hash:", txHash); 
  
 await connection.confirmTransaction({
   blockhash: blockhashInfo.blockhash,
