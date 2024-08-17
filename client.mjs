@@ -20,7 +20,7 @@ const keyPair = await getKeypairFromFile("~/.config/solana/id.json");
 const blockhashInfo = await connection.getLatestBlockhash();
 
 // Create a new transaction
-const tx = new Transaction({
+const tx = new Transaction({ 
   ...blockhashInfo,
 });
 
